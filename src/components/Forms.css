@@ -1,0 +1,181 @@
+body {
+  background-color: cornflowerblue;
+}
+
+.form-cont {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 888px) {
+  .form-cont {
+    flex-direction: column;
+  }
+  .form-cont Form {
+    height: 100vh;
+  }
+  .form-cont .result {
+    height: 100vh;
+  }
+}
+
+/* @media screen and (min-width: 900px) {
+  .form-cont Form {
+    height: 60vh;
+    background-color: blueviolet;
+  }
+  .form-cont .result {
+    height: 60vh;
+    background-color: blueviolet;
+  }
+} */
+
+.form-cont Form {
+  border: 5px solid purple;
+  width: 40%;
+  height: 93vh;
+  padding: 1rem 1rem;
+  background-color: aquamarine;
+  border-radius: 1rem;
+  box-shadow: -3px 5px 10px 5px purple;
+}
+
+.form-cont .result {
+  border: 5px solid aquamarine;
+  width: 40%;
+  height: 93vh;
+  padding: 1rem 1rem;
+  background-color: purple;
+  border-radius: 1rem;
+  color: white;
+  box-shadow: -3px 5px 10px 5px aquamarine;
+  font-weight: bold;
+  transform: translateX(500%);
+  transition: all 2s ease-out;
+}
+
+Form label {
+  text-transform: uppercase;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.form-control:focus {
+  border-color: purple !important;
+  box-shadow: 0 0 0 0.3rem purple !important;
+}
+
+.result .bord {
+  border: 1px solid aquamarine;
+  box-shadow: 0 0 0 0.3rem aquamarine;
+  background-color: white;
+  border-radius: 3px;
+  color: darkblue;
+  font-weight: bold;
+  /* padding: 2px 1px; */
+}
+
+.images {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.images img {
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0.3rem aquamarine;
+  width: 45%;
+  height: 15vh;
+}
+
+.pass {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sh-button {
+  width: 160px;
+}
+
+@media screen and (max-width: 800px) {
+  .form-cont Form {
+    height: min-content;
+  }
+
+  .pass {
+    flex-direction: column;
+  }
+  .sh-button {
+    width: 100px !important;
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+
+  #password {
+    width: 100% !important;
+  }
+}
+
+.salla {
+  animation: sallan 0.001s infinite;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: green;
+  font-weight: bold;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  width: 8rem;
+  display: block;
+  margin: auto;
+}
+
+.normal {
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: green;
+  font-weight: bold;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  width: 8rem;
+  display: block;
+  margin: auto;
+}
+#btn-salla {
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background-color: green;
+  font-weight: bold;
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  width: 8rem;
+  display: block;
+  margin: auto;
+}
+
+@keyframes sallan {
+  30% {
+    transform: translateX(150%);
+  }
+
+  100% {
+    transform: translateX(-150%);
+  }
+}
+
+.head-form {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
