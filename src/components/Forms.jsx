@@ -4,7 +4,6 @@ import "./Forms.css";
 import { useState } from "react";
 
 const Forms = () => {
-  //   const [toggle, setToggle] = useState(false);
   const [formsValues, setFormsValues] = useState({
     email: "",
     username: "",
@@ -40,24 +39,21 @@ const Forms = () => {
 
   const showHide = () => {
     const pass = document.querySelector("#password");
-    console.log(pass.type);
+
     pass.type === "password" ? (pass.type = "text") : (pass.type = "password");
   };
 
   function handleMouseOver(e) {
-    // setToggle(!toggle);
     if (!password) {
       e.target.className = "salla";
     }
   }
 
   function handleMouseLeave(e) {
-    // setToggle(!toggle);
     if (!password) {
       e.target.className = "normal";
     }
   }
-  console.log(Boolean(password));
 
   return (
     <div>
